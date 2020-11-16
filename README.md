@@ -11,3 +11,7 @@ This project is a homework assignment to teach how to get Pycharm setup with Doc
 ## Database Manager Screenshot
 
 ![Database_Manager_output](screenshots/mysql.jpg)
+
+## Homepage Screenshot
+
+![Database_Manager_output](screenshots/homepage.png)
