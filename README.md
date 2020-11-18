@@ -4,30 +4,36 @@
 
 This project is a homework assignment to teach how to get Pycharm setup with Docker, Flask, MySQL, and Postman.
 
-## Postman Screenshot
 
-![postman_output](screenshots/postman.png)
+## API: All-records Screenshot
 
-## Database Manager Screenshot
+![View all](screenshots/api_view_all.png)
 
-![Database_Manager_output](screenshots/data_table.png)
+## API: Single record Screenshot
 
-## Homepage Screenshot
+![View single](screenshots/api_viem_single_record.png)
 
-![Homepage](screenshots/homepage.png)
+## API: Adding a record
 
-## Adding a record
+![Adding](screenshots/api_post.png)
 
-![Adding](screenshots/add.png)
+Record list after posted:
 
-## Deleting a record
+![Adding_result](screenshots/api_post_result.png)
 
-![Deleting](screenshots/delete.png)
+## API: Deleting a record
 
-## Updating a record
+![Deleting](screenshots/api_delete.png)
 
-![Updating](screenshots/update.png)
+Record list after deleted:
 
-## Viewing a record
+![Deleting_result](screenshots/api_delete_result.png)
 
-![Viewing](screenshots/view.png)
+## API: Updating a record
+
+![Updating](screenshots/api_put.png)
+
+Record list after updated:
+
+![Updating_result](screenshots/api_put_result.png)
+
