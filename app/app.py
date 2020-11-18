@@ -111,7 +111,8 @@ def api_retrieve(rating_id) -> str:
 
 @app.route('/api/v1/ratings/', methods=['POST'])
 def api_add() -> str:
-    inputData = (request.form.get('Year'), request.form.get('Score'), request.form.get('Title'))
+    content = request.json
+    inputData = (content['Year'], content['Score'], content['Title'])
     db.insert_rating(inputData)
     resp = Response(status=200, mimetype='application/json')
     return resp
@@ -119,13 +120,14 @@ def api_add() -> str:
 
 @app.route('/api/v1/ratings/<int:rating_id>', methods=['PUT'])
 def api_edit(rating_id) -> str:
-    inputData = (request.form.get('Year'), request.form.get('Score'), request.form.get('Title'), rating_id)
+    content = request.json
+    inputData = (content['Year'], content['Score'], content['Title'], rating_id)
     db.update_rating(inputData)
     resp = Response(status=201, mimetype='application/json')
     return resp
 
 
-@app.route('/api/ratings/<int:rating_id>', methods=['DELETE'])
+@app.route('/api/v1/ratings/<int:rating_id>', methods=['DELETE'])
 def api_delete(rating_id) -> str:
     db.delete_rating(rating_id)
     resp = Response(status=210, mimetype='application/json')
